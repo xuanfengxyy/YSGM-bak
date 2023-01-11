@@ -1,3 +1,5 @@
+[EN](README.md) | [简中](README_zh-CN.md) 
+
 # YSGM
 
 A CLI tool to manage official genshin servers
@@ -5,6 +7,7 @@ A CLI tool to manage official genshin servers
 ## Setup
 Edit the configuration file included to your MUIP server IP and your servers SSH credentials.
 ![image](https://user-images.githubusercontent.com/27217031/199267587-c7d1f8ed-535e-49e6-ae63-ef8c16a46086.png)
+
 SSH credentials are not required if you only want to use GM / MUIP related commands.
 
 ## Commands
