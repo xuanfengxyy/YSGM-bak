@@ -37,9 +37,9 @@ namespace YSGM.Handlers
                 dict.Add(key, val?.ToString() ?? "");
             }
 
-            // Add more required keys
+            // 添加更多必需的密钥
             // dict.Add("effective_time", DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString());
-            // Not required
+            // 不必要
             dict["item_limit_type"] = "2"; // ITEM_LIMIT_GM
             return MUIPManager.Instance.GET(1005, dict);
         }
@@ -57,7 +57,7 @@ namespace YSGM.Handlers
             public string? item_limit_type { get; set; }
             public string? tag { get; set; }
             public string? source_type { get; set; }
-            public string? item_list { get; set; } // Separated by ,
+            public string? item_list { get; set; } // 由","分隔  Separated by ,
         }
         
         private void Redirect()

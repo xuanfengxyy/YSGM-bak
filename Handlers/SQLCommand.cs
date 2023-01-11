@@ -6,7 +6,7 @@
         {
             if (args.Length < 2)
             {
-                return "Usage: sql <db> <query>";
+                return "用法: sql <db> <query>";
             }
             var a = SQLManager.Instance.Execute(args[0], args.Skip(1).Aggregate((x, y) => x + " " + y));
             return a.InnerXml;

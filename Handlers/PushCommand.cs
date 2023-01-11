@@ -12,13 +12,13 @@ namespace YSGM.Handlers
             int UID = int.Parse(args[0]);
             var c = UID.ToString().Last();
 
-            // Parse back to bin_data
+            // 解析回 bin_data
             var compressed = Compress(UID);
             var binData = $"{BitConverter.ToString(compressed.ToArray()).Replace("-", "")}";
             Console.WriteLine(binData);
 
-            // Insert to DB
-            byte[] ZLIB = Encoding.Default.GetBytes("ZLIB"); // Convert ZLIB to hex
+            // 填入数据库Insert to DB
+            byte[] ZLIB = Encoding.Default.GetBytes("ZLIB"); // 将 ZLIB 转换为十六进制
             var xLIB = BitConverter.ToString(ZLIB);
             xLIB = xLIB.Replace("-", "");
             SQLManager.Instance.Execute("hk4e_db_user_32live", $"UPDATE t_player_data_{c} SET bin_data=UNHEX('{xLIB}{binData}') WHERE uid = '{UID}'");
