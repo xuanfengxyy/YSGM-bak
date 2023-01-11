@@ -3,6 +3,7 @@
 # YSGM
 
 A CLI tool to manage official genshin servers
+The code exegesis translated as Chinese
 
 ## Setup
 Edit the configuration file included to your MUIP server IP and your servers SSH credentials.
