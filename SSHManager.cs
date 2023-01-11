@@ -19,8 +19,8 @@ namespace YSGM
             string? host = ConfigurationManager.AppSettings.Get("SSH_HOST")!;
             string? user = ConfigurationManager.AppSettings.Get("SSH_USER")!;
 #endif
-            // I can't use SSH.NET...
-            // FINE. I'll just make a child process
+            // 我不能使用 SSH.NET...
+            // 好吧. 我只会做一个子进程
 
             var enviromentPath = Environment.GetEnvironmentVariable("PATH");
             if (enviromentPath == null) throw new Exception("PATH is null");

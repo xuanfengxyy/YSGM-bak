@@ -35,10 +35,10 @@ namespace YSGM
             });
         }
 
-        public string GET(int cmd, Dictionary<string, string> param) // These both are numbers, but string for convenience
+        public string GET(int cmd, Dictionary<string, string> param) // 这两个都是数字，但为了方便起见，类型是字符串
         {
 #if DEBUG
-            var builder = new UriBuilder("http://hk4e-storage.mihoyo.com:14311/api");
+            var builder = new UriBuilder("http://gs-console.moeyy.cn/api");//("http://hk4e-storage.mihoyo.com:14311/api");
 #else
             var builder = new UriBuilder(ConfigurationManager.AppSettings.Get("MUIP_HOST")!);
 #endif

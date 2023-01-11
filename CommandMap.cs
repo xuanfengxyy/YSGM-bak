@@ -9,16 +9,16 @@ namespace YSGM
         public static void RegisterAll()
         {
             handlers.Add("shell", new ShellCommand()); // SSH shell
-            handlers.Add("sql", new SQLCommand()); // SQL query
-            handlers.Add("gm", new GMCommand()); // GM command
-            handlers.Add("mail", new MailCommand()); // Send mail
-            handlers.Add("muip", new MUIPCommand()); // raw MUIP query
+            handlers.Add("sql", new SQLCommand()); // SQL 查询
+            handlers.Add("gm", new GMCommand()); // GM 命令
+            handlers.Add("mail", new MailCommand()); // 发送邮件
+            handlers.Add("muip", new MUIPCommand()); // 原始 MUIP 查询 raw MUIP query
 
-            // Exit app
+            // 退出app
             handlers.Add("exit", new ExitCommand());
             handlers.Add("quit", new ExitCommand());
 
-            // Player data
+            // 玩家数据
             handlers.Add("pull", new PullCommand());
             handlers.Add("push", new PushCommand());
         }
