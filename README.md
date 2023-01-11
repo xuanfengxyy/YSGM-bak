@@ -1,4 +1,4 @@
-[EN](README.md) | [简中](README_zh-CN.md) 
+[EN](README.md) | [简中](README_zh-cn.md) 
 
 # YSGM
 
