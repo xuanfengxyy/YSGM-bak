@@ -52,7 +52,7 @@ Executes a GM command on the specified UID
 ```
 
 ### mail
-Mails a player. Use [this site](https://memetrolls.net/miniprojects/mailparser/) to parse output.
+Mails a player. Use [this site](https://xuanfengxyy.github.io/HK4E-YSGM_Mail-Parser-Generator/) to parse output.
 ```
 Usage: mail <output>
 ```
